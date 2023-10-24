@@ -1,5 +1,10 @@
-[gd_scene format=3 uid="uid://cppbfg0hjckxj"]
+[gd_scene load_steps=2 format=3 uid="uid://cppbfg0hjckxj"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="TileSet" id="TileSet_2n7ns"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="TestLevel" type="Node2D"]
+position = Vector2(577, 326)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_2n7ns")
+format = 2
